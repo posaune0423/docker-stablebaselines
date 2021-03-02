@@ -16,11 +16,18 @@ Includes:
 **5. Others:** [ipywidgets](https://ipywidgets.readthedocs.io/en/stable/index.html), [h5py](http://www.h5py.org/)
 
 
+## How to use
+to build the docker image after clone this repository run
+```bash
+$ cd docker-baselines
+$ docker build -t "name:tagname" .
+```
+
 ## Rendering on Jupyter notebook
 
 The virtual frame buffer allows the video from the gym environments to be rendered on jupyter notebooks. 
 Simple example with Breakout:
-```
+```python
 import gym
 from IPython import display
 import matplotlib.pyplot as plt
