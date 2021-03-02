@@ -9,7 +9,7 @@ Includes:
 
 **2. Deep Learning:** [TensorFlow](https://www.tensorflow.org/), [Keras](http://keras.io/)
 
-**3. Reinforcement Learning:**[Keras-RL](https://keras-rl.readthedocs.io/en/latest/), [baselines](https://github.com/openai/baselines), [TensorForce](https://github.com/reinforceio/tensorforce)
+**3. Reinforcement Learning:**[Keras-RL](https://keras-rl.readthedocs.io/en/latest/), [stablebaselines](https://github.com/hill-a/stable-baselines), [TensorForce](https://github.com/reinforceio/tensorforce)
 
 **4. Environments:**[AI Gym](https://github.com/openai/gym)
 
