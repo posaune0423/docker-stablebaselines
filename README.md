@@ -19,7 +19,7 @@ Includes:
 ## How to use
 to build the docker image after clone this repository run
 ```bash
-$ cd docker-baselines
+$ cd docker-stablebaselines
 $ docker build -t "name:tagname" .
 ```
 
