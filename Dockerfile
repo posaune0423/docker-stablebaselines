@@ -31,12 +31,12 @@ RUN apt-get update \
         libopenblas-base  \
         libatlas-dev  \
         cython3  \
-        vim \
+        vim  \
      && apt-get clean \
      && rm -rf /var/lib/apt/lists/*
 
 # Upgrade pip
-RUN python3 -mpip install --upgrade pip
+RUN python3 -m pip install --upgrade pip
 
 # Install Python packages - Step 1
 COPY requirements_1.txt /tmp/
