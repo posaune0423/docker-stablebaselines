@@ -1,0 +1,14 @@
+# DL
+stable-baselines[mpi]
+tensorflow==1.14 
+
+# openAI Gym
+gym
+gym[atari]
+
+# Jupyter
+jupyter_client
+jupyter
+jupyterlab
+jupyter_nbextensions_configurator
+
