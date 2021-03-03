@@ -17,10 +17,23 @@ Includes:
 
 
 ## How to use
+
+### Build the image
+
 to build the docker image after clone this repository run
 ```bash
 $ cd docker-stablebaselines
 $ docker build -t "name:tagname" .
+```
+ or pull from Docker Hub
+
+```bash
+$ docker pull posaune0423/docker-stablebaselines
+```
+### Start the container
+
+```bash
+$ docker run -p 8888:8888 -it "container_name:tag_name"
 ```
 
 ## Rendering on Jupyter notebook
