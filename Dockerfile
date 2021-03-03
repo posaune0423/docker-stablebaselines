@@ -3,13 +3,11 @@ FROM $BASE_CONTAINER
 
 LABEL maintainer="posaune0423"
 
-
-
-
-
-
-
-
+# set env
+ENV USER posaune0423
+ENV HOME /home/${USER}
+ENV DEBIAN_FRONTEND noninteractive
+ENV DISPLAY :0.0
 
 # Ubuntu packages
 RUN apt-get update \
@@ -32,14 +30,19 @@ RUN apt-get update \
         dbus \
         swig \
         software-properties-common \
+        vim \
      && apt-get clean \
      && rm -rf /var/lib/apt/lists/*t
 
 
-
+# install python libraries
 COPY requirements.txt /tmp/
 RUN pip install -r /tmp/requirements.txt
 
+
+WORKDIR ${HOME}
+VOLUME ${HOME}
+VOLUME /tmp/.X11-unix
 
 CMD cd ${HOME} \
     && /usr/local/bin/jupyter notebook \

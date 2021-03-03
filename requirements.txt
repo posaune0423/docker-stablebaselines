@@ -12,3 +12,6 @@ jupyter
 jupyterlab
 jupyter_nbextensions_configurator
 
+# Other
+JSAnimation
+ipywidgets
